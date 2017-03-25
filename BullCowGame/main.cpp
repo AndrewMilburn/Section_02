@@ -7,7 +7,7 @@ user interaction. For game logic see the FBullCowGame Class.
 #include <string>
 #include "FBullCowGame.h"
 
-// 2.44 4:54
+// 2.44 7:12
  
 
 using FText = std::string;

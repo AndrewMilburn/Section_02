@@ -43,4 +43,6 @@ private:
 	int32 MyMaxTries;		// Constructor now holds initial values
 	FString MyHiddenWord;
 	bool bGameIsWon;
+
+	bool IsIsogram(FString) const;
 };

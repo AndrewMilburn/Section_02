@@ -29,7 +29,7 @@ void FBullCowGame::Reset()
 
 EGuessStatus FBullCowGame::CheckGuessValidity(FString Guess) const
 {
-	if (false) // TODO if guess not isogram
+	if (!IsIsogram(Guess)) 
 	{
 		return EGuessStatus::Not_Isogram;
 	}
@@ -76,5 +76,10 @@ FBullCowCount FBullCowGame::SubmitValidGuess(FString Guess)
 	}
 	bGameIsWon = (BullCowCount.Bulls == HiddenWordLength);
 	return BullCowCount;
+}
+
+bool FBullCowGame::IsIsogram(FString) const
+{
+	return true;
 }
 
